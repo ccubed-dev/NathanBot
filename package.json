@@ -1,0 +1,29 @@
+{
+  "name": "nathanbot-2.0",
+  "version": "1.0.0",
+  "description": "The official Discord bot for the CCubed server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SherRao/NathanBot.git"
+  },
+  "author": "Nausher Rao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SherRao/NathanBot/issues"
+  },
+  "homepage": "https://github.com/SherRao/NathanBot#readme",
+  "dependencies": {
+    "discord-slash-commands-client": "^1.1.1",
+    "discord.js": "^12.5.3",
+    "eslint": "^7.23.0",
+    "firebase-admin": "^9.6.0",
+    "node": "^15.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.37"
+  }
+}
