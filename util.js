@@ -9,6 +9,7 @@ module.exports = {
      * 
      * @param {string} message The message to send to the channel.
      * @param {any} interaction The interaction data to respond to.
+     * 
      */
     sendMessage: (message, interaction) => {
         bot.discord.api.interactions(interaction.id, interaction.token).callback.post({

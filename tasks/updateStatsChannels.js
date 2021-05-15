@@ -1,12 +1,13 @@
 const util = require('../util');
 const main = require('../index');
+const config = require('../config.json');
 const discord = main.discord;
 const logger = main.logger;
 
 module.exports = {
 
     // How long to wait in between calls to this tasks execute(), in milliseconds.
-    interval: 1000 * 60,
+    interval: 1000 * 20,
     
     execute: () =>{
         let server = discord.guilds.cache.get(config.server);
@@ -36,6 +37,9 @@ module.exports = {
 
         discord.channels.fetch(config.statistics.gaming)
             .then(channel => { channel.setName(`🎮 Gaming: ${gaming}`) });
+
+            
+        logger.info("Updated visible statistics!");
 
     }
 } 
